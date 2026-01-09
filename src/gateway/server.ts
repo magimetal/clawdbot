@@ -789,7 +789,7 @@ export async function startGatewayServer(
     stopSignalProvider,
     stopIMessageProvider,
     stopMSTeamsProvider,
-    markWhatsAppLoggedOut,
+    markProviderLoggedOut,
   } = providerManager;
 
   const broadcast = (
@@ -1666,7 +1666,7 @@ export async function startGatewayServer(
               stopSignalProvider,
               startIMessageProvider,
               stopIMessageProvider,
-              markWhatsAppLoggedOut,
+              markProviderLoggedOut,
               wizardRunner,
               broadcastVoiceWakeChanged,
             },
